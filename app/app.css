@@ -28,3 +28,34 @@
   content: "";
   padding: 0;
 }
+
+.container li {
+  margin: 20px 0;
+}
+.ng-dirty.ng-valid {
+  border-color: limegreen;
+}
+.ng-dirty.ng-invalid {
+  border-color: red;
+}
+i {
+  margin: 15px 0 40px 0;
+}
+i.fa-smile-o.active, i.fa-smile-o:hover {
+  color: limegreen;
+}
+i.fa-frown-o.active, i.fa-frown-o:hover {
+  color: red;
+}
+.animate {
+  -webkit-animation: fadeInRight 1s;
+  animation: fadeInRight 1s;
+}
+.animate.ng-enter {
+  -webkit-animation: fadeInRight 1s;
+  animation: fadeInRight 1s;
+}
+.animate.ng-leave {
+  -webkit-animation: fadeOutRight 1s;
+  animation: fadeOutRight 1s;
+}

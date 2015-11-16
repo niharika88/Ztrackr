@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "question": "i am good u see ",
+        "option1": "yippi",
+        "option2": "ok ok.",
+        "option3": "The author had a habit of holding his head at an angle while coding.",
+        "answer": "2"
+    },
+    {
+        "id": 2,
+        "question": "Why does AngularJS use the namespace ng?",
+        "option1": "It stands for 'ngage'(engage).",
+        "option2": "It's the initials of the original author.",
+        "option3": "It sounds like angular",
+        "answer": "3"
+    }
+]
