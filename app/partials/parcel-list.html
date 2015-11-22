@@ -1,0 +1,63 @@
+<div>
+  <div class="clearfix">
+  Filter parcels by text: <input type="text" ng-model="filterText" />
+  <br>
+   <span>Total  Parcels : {{ total() }}</span>
+   <br>
+   <span>Sort By:</span>
+   <div class="btn-group btn-group pull-center">
+   <button  class="btn btn-default" ng-click="orderByAttribute = 'Value'">Value</button>
+   <button   class="btn btn-default" ng-click="orderByAttribute = 'weight'">Weight</button>
+ </div>
+  <a class="pull-right" href="#/parcels/new"><span class="glyphicon glyphicon-plus"></span> Add new parcel</a>
+</div>
+<div class="panel-group" id="accordion">
+  <ul class="list-group">
+    <li ng-repeat="parcel in parcels | orderByPriority | filter:filterText | orderObjectBy:orderByAttribute " class="list-group-item animate">
+
+
+ <div class="panel panel-default" >
+        <div class="panel-heading">
+             <h4 class="panel-title">
+      {{parcel.parcel}}
+      </h4>
+        <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+
+        </div>
+            <div class="panel-body">
+       <div class="pull-right">
+      <a href="#/parcels/{{parcel.$id}}">Edit</a>  | <a ng-click="deleteparcel(parcel.$id)">Delete</a>
+      <div fb-like></div>
+    </div>
+
+        <div address-based-google-map address="parcel.Address" zoom="16"></div>
+        <div area-based-google-map area="parcel.Area" zoom="8"></div>
+      <div> <label class="control-label">Weight:</label> {{parcel.weight}}</div>
+      <div> <label class="control-label">Name:</label> {{parcel.Name}}</div>
+      <div> <label class="control-label">Quantity:</label> {{parcel.quantity}}</div>
+      <div> <label class="control-label">Value:</label> {{parcel.Value}}</div>
+      <div> <label class="control-label">Date:</label> {{parcel.date}}</div>
+      <div> <label class="control-label">Type:</label> {{parcel.Type}}</div>
+      <div> <label class="control-label">Color:</label> {{parcel.Color}}</div>
+      <div> <label class="control-label">Address:</label> {{parcel.Address}}</div>
+      <div> <label class="control-label">Area:</label> </div>
+      <div> <label class="control-label">Area Name:</label>
+        {{parcel.Area.name}} </div>
+        <div> <label class="control-label">Area Longitude:</label> {{parcel.Area.Longitude}} </div>
+        <div> <label class="control-label">Area Latitude:</label> {{parcel.Area.Latitude}}</div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    </li>
+  </ul>
+</div>
+</div>

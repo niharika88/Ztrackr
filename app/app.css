@@ -59,3 +59,25 @@ i.fa-frown-o.active, i.fa-frown-o:hover {
   -webkit-animation: fadeOutRight 1s;
   animation: fadeOutRight 1s;
 }
+
+.panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+}
+.row {
+    margin-top: 40px;
+    padding: 0 10px;
+}
+.clickable {
+    cursor: pointer;
+}
+#areaMap, #addressMap
+  {
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .angular-google-map-container {
+        height: 400px;
+}
