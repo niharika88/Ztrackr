@@ -1,6 +1,6 @@
 'use strict';
 
-var parcelAnsApp = angular.module('parcelAnsApp', ['firebase','angulike'] );
+var parcelAnsApp = angular.module('parcelAnsApp', ['firebase'] );
 parcelAnsApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
     when('/parcels', {
