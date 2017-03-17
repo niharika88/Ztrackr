@@ -1,4 +1,4 @@
-#ASIMPLE PACKAGE TRACKING APP 
+# PACKAGE TRACKING APP 
 
 This project is an application to list and track the possible parcels a user have.
 It makes use of angualr js as a  frontend framework and backend in served on firebase.
